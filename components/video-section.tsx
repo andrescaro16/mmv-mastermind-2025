@@ -21,12 +21,14 @@ export function VideoSection() {
               </div>
             </div>
             {/* When you have the actual video URL, replace this with: */}
-            {/* <iframe 
-              src="{{VIDEO_URL}}" 
-              className="w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe> */}
+            {/* <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+              <iframe 
+                src="" 
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
+            </div> */}
           </div>
 
           {/* Caption */}

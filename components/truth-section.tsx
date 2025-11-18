@@ -13,7 +13,7 @@ export function TruthSection() {
           {/* Content paragraphs */}
           <div className="space-y-8 mb-12">
             <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-foreground/90 text-pretty">
-              No necesitas más cursos, más tácticas o más "productividad". El verdadero problema es que te enseñaron a construir desconectado de Dios… o a conectar con Dios sin estructura. Ambos caminos te llevan al mismo lugar: frustración.
+              No necesitas más cursos, más tácticas o más &quot;productividad&quot;. El verdadero problema es que te enseñaron a construir desconectado de Dios… o a conectar con Dios sin estructura. Ambos caminos te llevan al mismo lugar: frustración.
             </p>
             
             <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-foreground/90 text-pretty">
