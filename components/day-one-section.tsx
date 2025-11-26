@@ -1,51 +1,42 @@
 import { CTAButton } from './cta-button'
-import { Sparkles, Users, Package, MessageCircle, User, FileText, Settings, Megaphone, Cog } from 'lucide-react'
+import { Sparkles, User, Package, FileText, TrendingUp, Heart } from 'lucide-react'
 
-const topics = [
+const phases = [
   {
     icon: Sparkles,
-    title: 'Conexión con Dios',
-    description: 'Antes de hablar de negocios, hablamos de propósito. Te mostraremos cómo se ve un negocio sostenido por tu relación con Dios, cómo tomar decisiones desde la guía espiritual y cómo construir desde la identidad correcta, no desde la carencia.'
-  },
-  {
-    icon: Users,
-    title: 'Nicho',
-    description: 'Entenderás quién es realmente tu "yo del pasado", cómo se identifica su dolor, qué nivel de conciencia tiene y por qué no estás vendiendo hoy (aunque tengas talento).'
-  },
-  {
-    icon: Package,
-    title: 'Oferta',
-    description: 'No más vender sesiones sueltas. Verás la estructura real de una oferta transformadora: promesa, metodología, precio y vehículo. Te vas a dar cuenta de que siempre tuviste la semilla, solo faltaba ordenarla.'
-  },
-  {
-    icon: MessageCircle,
-    title: 'Ventas',
-    description: 'Te enseñaremos cómo se vende desde el amor, la responsabilidad y la verdad. Sin manipular, sin scripts huecos. Con claridad, presencia y guía.'
+    title: 'Fase 1 · Dios Primero',
+    description: 'Activación, adoración, oración y Palabra que alinean tu espíritu con tu visión.',
+    result: 'Resultado: silencio interno + paz + claridad para escuchar a Dios.'
   },
   {
     icon: User,
-    title: 'Marca Personal',
-    description: 'Tu historia, tu transformación y tu identidad espiritual se vuelven tu mensaje. Te mostraremos cómo comunicar tu esencia sin perder profesionalismo ni profundidad.'
+    title: 'Fase 2 · Identidad & Marca Profética',
+    description: 'Descubres quién eres en Dios, qué representas en el mercado y cuál es tu mensaje real.',
+    result: 'Resultado: identidad firme y narrativa de marca clara.'
+  },
+  {
+    icon: Package,
+    title: 'Fase 3 · Oferta & Monetización desde la Misión',
+    description: 'Construyes o ajustas tu oferta high-ticket a 10K/mes, con estructura, precio y posicionamiento.',
+    result: 'Resultado: oferta alineada, premium y lista para vender.'
   },
   {
     icon: FileText,
-    title: 'Contenido',
-    description: 'No es sobre ser "viral". Es sobre ser CLARO. Qué decir. Cómo decirlo. Qué historias contar. Cómo hablarle a tu nicho directo al corazón.'
+    title: 'Fase 4 · Contenido que Conecta Cielo & Conversión',
+    description: 'Aprendes a crear contenido que toca el corazón, mueve la fe y convierte en clientes reales.',
+    result: 'Resultado: guion de contenido listo para publicar.'
   },
   {
-    icon: Settings,
-    title: 'Setting',
-    description: 'El paso olvidado por casi todos: cómo sostener la conversación inicial, cuál es tu rol en esa fase y por qué la mayoría de oportunidades se pierden aquí.'
+    icon: TrendingUp,
+    title: 'Fase 5 · Plan 90 Días: Tu Misión 10K',
+    description: 'Diseñas tu hoja de ruta estratégica para los próximos 90 días.',
+    result: 'Resultado: dirección, enfoque y compromiso con tu versión 2026.'
   },
   {
-    icon: Megaphone,
-    title: 'Anuncios',
-    description: 'Nada avanzado, solo la verdad: cómo funcionan, cuándo usarlos, cuánto invertir y qué esperar. Lo suficiente para que dejes de temerle a la palabra "ads".'
-  },
-  {
-    icon: Cog,
-    title: 'Operaciones & Ejecución',
-    description: 'Vas a entender por qué no escalas. No por falta de ganas, sino por falta de sistema. Te mostraremos cómo se ve un negocio ordenado, simple y real.'
+    icon: Heart,
+    title: 'Fase 6 · Cierre Profético',
+    description: 'Un momento íntimo de encuentro con Dios que marca el cierre y activa decisiones.',
+    result: 'Resultado: convicción, fortaleza y claridad del siguiente paso.'
   }
 ]
 
@@ -57,37 +48,43 @@ export function DayOneSection() {
           {/* Section header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground text-balance">
-              El primer día es teoría, claridad, verdad… y experiencias de alto impacto.
+              LO QUE VIVIRÁS DURANTE EL DÍA
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto text-pretty">
-              El verdadero crecimiento no pasa por hacer más, sino por ORDENAR tu interior, tu mensaje y tu negocio en coherencia con Dios. En este primer día, vas a entender paso a paso la estructura completa que sostiene el Método Misión de Vida… y por qué, cuando la aplicas, tu negocio deja de ser un caos y empieza a multiplicarse.
+            <p className="text-xl text-muted-foreground font-medium">
+              (AGENDA TRANSFORMACIONAL)
             </p>
           </div>
 
-          {/* Topics grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {topics.map((topic, index) => (
+          {/* Phases grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {phases.map((phase, index) => (
               <div
                 key={index}
-                className="bg-card rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-border"
+                className="bg-card rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-border flex flex-col"
               >
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
-                  <topic.icon className="w-7 h-7 text-primary" />
+                  <phase.icon className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-card-foreground">
-                  {topic.title}
+                <h3 className="text-xl font-bold mb-3 text-card-foreground">
+                  {phase.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {topic.description}
+                <p className="text-muted-foreground leading-relaxed mb-4 grow">
+                  {phase.description}
                 </p>
+                <div className="bg-accent/50 p-3 rounded-lg border border-accent">
+                  <p className="text-sm font-medium text-foreground">
+                    {phase.result}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
 
           {/* CTA */}
-          <div className="text-center">
-            <CTAButton>
-              Quiero ser parte
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <CTAButton>QUIERO ESTAR EN LLANOGRANDE</CTAButton>
+            <CTAButton variant="secondary" className="text-primary! border-primary! hover:bg-primary/10!">
+              QUIERO PROGRAMA + EVENTO (MMV)
             </CTAButton>
           </div>
         </div>
