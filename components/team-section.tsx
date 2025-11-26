@@ -4,13 +4,13 @@ const teamMembers = [
   {
     role: 'CEO',
     name: 'Alejandro Jaramillo',
-    description: 'Visionario y fundador de Expansión Life y MMV.',
+    description: 'Fundador y visionario de Expansión Life y MMV.',
     image: 'https://placehold.co/400x533/ffffff/563766?text=Alejo'
   },
   {
     role: 'Project Manager',
     name: 'Andrés Caro',
-    description: 'Orquestando cada detalle para la excelencia.',
+    description: 'Orquestando cada detalle desde el amor para la excelencia.',
     image: 'https://placehold.co/400x533/ffffff/563766?text=Andres'
   },
   {
