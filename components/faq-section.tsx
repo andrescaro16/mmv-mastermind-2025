@@ -8,6 +8,10 @@ import { CTAButton } from './cta-button'
 
 const faqs = [
   {
+    question: "¿Cuál es la diferencia entre la Entrada General y la Entrada VIP?",
+    answer: "La Entrada General (300 USD) te da acceso al Día 1, donde vas a alinear tu identidad espiritual, tu visión 2026, tu oferta a 10K/mes, tu contenido y tu plan de acción a 90 días. La Entrada VIP (800 USD) incluye el Día 1 y un segundo día completo de implementación 1 a 1 con Alejo y el equipo MMV, donde te ayudamos de forma personalizada a aterrizar, ajustar y montar tu sistema de nicho, oferta, ventas, contenido, marca y operaciones, dentro de un contexto de lujo, claridad y presencia con Dios. Es para quienes no solo quieren claridad, sino salir con el negocio mucho más armado y listo para ejecutar."
+  },
+  {
     question: "¿Necesito ser súper espiritual para asistir?",
     answer: "No. Solo necesitas estar abierto a conectar con Dios de forma auténtica. No es religioso; es profundo, práctico y transformador."
   },

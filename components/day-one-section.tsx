@@ -5,38 +5,32 @@ const phases = [
   {
     icon: Sparkles,
     title: 'Fase 1 · Dios Primero',
-    description: 'Activación, adoración, oración y Palabra que alinean tu espíritu con tu visión.',
-    result: 'Resultado: silencio interno + paz + claridad para escuchar a Dios.'
+    description: 'Activación, adoración, oración y Palabra que alinean tu espíritu con tu visión.'
   },
   {
     icon: User,
     title: 'Fase 2 · Identidad & Marca Profética',
-    description: 'Descubres quién eres en Dios, qué representas en el mercado y cuál es tu mensaje real.',
-    result: 'Resultado: identidad firme y narrativa de marca clara.'
+    description: 'Descubres quién eres en Dios, qué representas en el mercado y cuál es tu mensaje real.'
   },
   {
     icon: Package,
     title: 'Fase 3 · Oferta & Monetización desde la Misión',
-    description: 'Construyes o ajustas tu oferta high-ticket a 10K/mes, con estructura, precio y posicionamiento.',
-    result: 'Resultado: oferta alineada, premium y lista para vender.'
+    description: 'Construyes o ajustas tu oferta high-ticket a 10K/mes, con estructura, precio y posicionamiento.'
   },
   {
     icon: FileText,
     title: 'Fase 4 · Contenido que Conecta Cielo & Conversión',
-    description: 'Aprendes a crear contenido que toca el corazón, mueve la fe y convierte en clientes reales.',
-    result: 'Resultado: guion de contenido listo para publicar.'
+    description: 'Aprendes a crear contenido que toca el corazón, mueve la fe y convierte en clientes reales.'
   },
   {
     icon: TrendingUp,
     title: 'Fase 5 · Plan 90 Días: Tu Misión 10K',
-    description: 'Diseñas tu hoja de ruta estratégica para los próximos 90 días.',
-    result: 'Resultado: dirección, enfoque y compromiso con tu versión 2026.'
+    description: 'Diseñas tu hoja de ruta estratégica para los próximos 90 días.'
   },
   {
     icon: Heart,
     title: 'Fase 6 · Cierre Profético',
-    description: 'Un momento íntimo de encuentro con Dios que marca el cierre y activa decisiones.',
-    result: 'Resultado: convicción, fortaleza y claridad del siguiente paso.'
+    description: 'Un momento íntimo de encuentro con Dios que marca el cierre y activa decisiones.'
   }
 ]
 
@@ -71,11 +65,6 @@ export function DayOneSection() {
                 <p className="text-muted-foreground leading-relaxed mb-4 grow">
                   {phase.description}
                 </p>
-                <div className="bg-accent/50 p-3 rounded-lg border border-accent">
-                  <p className="text-sm font-medium text-foreground">
-                    {phase.result}
-                  </p>
-                </div>
               </div>
             ))}
           </div>
