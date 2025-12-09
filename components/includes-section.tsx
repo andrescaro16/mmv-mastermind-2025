@@ -40,10 +40,10 @@ export function IncludesSection() {
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <CTAButton size="large">
+            <CTAButton size="large" href="https://wa.link/sjmou8">
               QUIERO ESTAR EN LLANOGRANDE
             </CTAButton>
-            <CTAButton size="large" variant="secondary" className="text-primary! border-primary! hover:bg-primary/10!">
+            <CTAButton size="large" variant="secondary" className="text-primary! border-primary! hover:bg-primary/10!" href="https://wa.link/qng9f0">
               QUIERO PROGRAMA + EVENTO (MMV)
             </CTAButton>
           </div>

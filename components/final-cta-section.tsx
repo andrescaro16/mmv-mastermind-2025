@@ -18,10 +18,10 @@ export function FinalCTASection() {
 
           {/* Final CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
-            <CTAButton size="large" className="w-full sm:w-auto">
+            <CTAButton size="large" className="w-full sm:w-auto" href="https://wa.link/sjmou8">
               QUIERO MI LUGAR EN LLANOGRANDE 2025
             </CTAButton>
-            <CTAButton size="large" variant="secondary" className="w-full sm:w-auto">
+            <CTAButton size="large" variant="secondary" className="w-full sm:w-auto" href="https://wa.link/qng9f0">
               QUIERO EL PROGRAMA + EL MASTERMIND
             </CTAButton>
           </div>
@@ -50,7 +50,7 @@ export function FinalCTASection() {
                 <div>
                   <p className="font-bold text-lg mb-1 text-yellow-300">Si sabes que tu siguiente nivel requiere sentarte 1 a 1 con Alejo y su equipo para implementar todo,</p>
                   <p className="text-primary-foreground/80 mb-4">envíame la palabra VIP por DM o haz clic en el botón de Entrada VIP (800 USD) y asegura tu lugar para los 2 días completos.</p>
-                  <CTAButton className="w-full sm:w-auto bg-yellow-500 text-primary hover:bg-yellow-400 border-none">
+                  <CTAButton className="w-full sm:w-auto bg-yellow-500 text-primary hover:bg-yellow-400 border-none" href="https://wa.link/pr7mde">
                     QUIERO MI ENTRADA VIP (800 USD)
                   </CTAButton>
                 </div>

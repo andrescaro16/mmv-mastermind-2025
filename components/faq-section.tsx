@@ -1,10 +1,12 @@
+'use client'
+
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { CTAButton } from './cta-button'
+import { ArrowUp } from 'lucide-react'
 
 const faqs = [
   {
@@ -46,10 +48,21 @@ const faqs = [
   {
     question: "¿Qué debo llevar?",
     answer: "Sólo tu cuaderno, tu corazón y disposición. Lo demás te lo damos nosotros."
+  },
+  {
+    question: "¿Mi compra puede ser reembolsada?",
+    answer: "No. Asegúrate de poder asistir, pues al ser un evento presencial y por motivos de logística y organización se toma en cuenta cada ticket para asumir el costo del evento."
   }
 ]
 
 export function FAQSection() {
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById('pricing')
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <section className="py-20 md:py-32 bg-background">
       <div className="container px-4">
@@ -71,11 +84,16 @@ export function FAQSection() {
             ))}
           </Accordion>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <CTAButton>QUIERO ESTAR EN LLANOGRANDE</CTAButton>
-            <CTAButton variant="secondary" className="text-primary! border-primary! hover:bg-primary/10!">
-              QUIERO PROGRAMA + EVENTO (MMV)
-            </CTAButton>
+          <div className="flex justify-center">
+            <button 
+              onClick={scrollToPricing}
+              className="group flex items-center gap-3 px-8 py-4 rounded-full bg-primary/5 hover:bg-primary/10 border border-primary/20 transition-all duration-300"
+            >
+              <span className="font-semibold text-primary text-lg">Ver opciones de entradas</span>
+              <div className="p-2 rounded-full bg-primary text-primary-foreground group-hover:-translate-y-1 transition-transform duration-300">
+                <ArrowUp className="w-5 h-5" />
+              </div>
+            </button>
           </div>
         </div>
       </div>

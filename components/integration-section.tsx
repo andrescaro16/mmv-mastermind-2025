@@ -28,7 +28,7 @@ export function IntegrationSection() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <CTAButton variant="secondary" className="bg-white! text-primary! border-white! hover:bg-white/90!">
+                <CTAButton variant="secondary" className="bg-white! text-primary! border-white! hover:bg-white/90!" href="https://wa.link/qng9f0">
                   QUIERO PROGRAMA + EVENTO (MMV)
                 </CTAButton>
               </div>

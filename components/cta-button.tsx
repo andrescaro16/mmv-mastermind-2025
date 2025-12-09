@@ -6,10 +6,11 @@ interface CTAButtonProps {
   size?: 'default' | 'large'
   variant?: 'primary' | 'secondary'
   className?: string
+  href?: string
 }
 
-export function CTAButton({ children, size = 'default', variant = 'primary', className = '' }: CTAButtonProps) {
-  const WHATSAPP_URL = 'http://wa.link/x2iilf'
+export function CTAButton({ children, size = 'default', variant = 'primary', className = '', href }: CTAButtonProps) {
+  const DEFAULT_URL = 'https://wa.link/sjmou8' // Entrada General link as default
   
   const sizeClasses = size === 'large' 
     ? 'px-10 py-5 text-lg md:text-xl font-semibold' 
@@ -21,7 +22,7 @@ export function CTAButton({ children, size = 'default', variant = 'primary', cla
   
   return (
     <Link
-      href={WHATSAPP_URL}
+      href={href || DEFAULT_URL}
       target="_blank"
       rel="noopener noreferrer"
       className={`inline-flex items-center justify-center gap-3 rounded-xl transition-all duration-300 uppercase tracking-wide ${sizeClasses} ${variantClasses} ${className}`}

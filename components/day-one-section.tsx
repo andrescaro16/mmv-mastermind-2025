@@ -71,8 +71,8 @@ export function DayOneSection() {
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <CTAButton>QUIERO ESTAR EN LLANOGRANDE</CTAButton>
-            <CTAButton variant="secondary" className="text-primary! border-primary! hover:bg-primary/10!">
+            <CTAButton href="https://wa.link/sjmou8">QUIERO ESTAR EN LLANOGRANDE</CTAButton>
+            <CTAButton variant="secondary" className="text-primary! border-primary! hover:bg-primary/10!" href="https://wa.link/qng9f0">
               QUIERO PROGRAMA + EVENTO (MMV)
             </CTAButton>
           </div>

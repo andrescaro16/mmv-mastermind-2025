@@ -111,13 +111,13 @@ export function VipSection() {
           </div>
 
           {/* How it works */}
-          <div className="grid md:grid-cols-2 gap-12 mb-20 items-center">
+          <div className="max-w-3xl mx-auto mb-20">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-6">¿Cómo funciona el Día 2 VIP?</h3>
-              <p className="text-gray-300 mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-center">¿Cómo funciona el Día 2 VIP?</h3>
+              <p className="text-gray-300 mb-6 text-center">
                 No es un taller masivo. Es un día de implementación acompañado, con cupos muy limitados, donde:
               </p>
-              <ul className="space-y-4">
+              <ul className="space-y-4 bg-white/5 p-8 rounded-3xl border border-white/10">
                 {[
                   "Pasas 1 a 1 con Alejo a revisar identidad, visión, oferta y alineación espiritual.",
                   "Pasas 1 a 1 con cada miembro del equipo MMV (marketing, contenido, ventas, operaciones) para optimizar cada área.",
@@ -131,50 +131,15 @@ export function VipSection() {
                 ))}
               </ul>
               <div className="mt-8 p-4 bg-yellow-500/10 border border-yellow-500/30 rounded-xl text-yellow-200 font-medium text-center">
-                No te vas con más teoría. Te vas con tu negocio ordenado y potenciado.
+                En el día 1 ganas claridad y dirección. Este día te vas con tu negocio ordenado y potenciado.
               </div>
             </div>
-            <div className="bg-white/5 p-8 rounded-3xl border border-white/10">
-              <h3 className="text-2xl font-bold mb-8 text-center">Inversión Entrada VIP</h3>
-              
-              <div className="space-y-6 mb-8">
-                <div className="flex justify-between items-center p-4 rounded-xl bg-white/5 border border-white/10 opacity-60">
-                  <span className="font-medium">Entrada General Día 1</span>
-                  <span className="font-bold text-xl">300 USD</span>
-                </div>
-                <div className="flex justify-between items-center p-6 rounded-xl bg-primary/20 border border-primary/50 shadow-[0_0_30px_rgba(124,58,237,0.2)] transform scale-105">
-                  <div>
-                    <span className="font-bold text-lg text-white block">Entrada VIP</span>
-                    <span className="text-xs text-primary-200">Día 1 + Día 2 – Implementación</span>
-                  </div>
-                  <span className="font-bold text-3xl text-white">800 USD</span>
-                </div>
-              </div>
+          </div>
 
-              <div className="space-y-3 mb-8">
-                <p className="font-bold text-sm text-gray-400 uppercase tracking-wider mb-2">La entrada VIP incluye:</p>
-                {[
-                  "Acceso completo al Día 1 del Mastermind.",
-                  "Acceso exclusivo al Día 2 de Implementación 1:1.",
-                  "Trabajo personalizado con Alejo y el equipo MMV.",
-                  "Contexto de lujo, alto nivel y emprendedores conscientes."
-                ].map((item, i) => (
-                  <li key={i} className="flex gap-2 text-sm text-gray-300">
-                    <Star className="w-4 h-4 text-yellow-400 shrink-0 mt-0.5" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </div>
-
-              <div className="text-center">
-                <p className="text-sm text-yellow-400/80 mb-4 font-medium">
-                  Cupos VIP muy limitados. No es para todos.
-                </p>
-                <CTAButton className="w-full bg-white text-primary hover:bg-gray-100">
-                  QUIERO MI ENTRADA VIP (800 USD)
-                </CTAButton>
-              </div>
-            </div>
+          <div className="flex justify-center pb-12">
+            <CTAButton href="https://wa.link/pr7mde" className="bg-yellow-500 text-primary hover:bg-yellow-400 border-none shadow-lg shadow-yellow-500/20 text-lg px-8 py-6">
+              QUIERO MI ENTRADA VIP (800 USD)
+            </CTAButton>
           </div>
 
         </div>

@@ -43,16 +43,16 @@ export function HeroSection() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <CTAButton size="large">
+            <CTAButton size="large" href="https://wa.link/sjmou8">
               QUIERO ESTAR EN LLANOGRANDE
             </CTAButton>
-            <CTAButton size="large" variant="secondary">
+            <CTAButton size="large" variant="secondary" href="https://wa.link/qng9f0">
               QUIERO PROGRAMA + EVENTO (MMV)
             </CTAButton>
           </div>
 
           {/* Video VSL Placeholder */}
-          <div className="relative w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 bg-black/20 backdrop-blur-sm">
+          {/* <div className="relative w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 bg-black/20 backdrop-blur-sm">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
                 <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-md mb-4 mx-auto cursor-pointer hover:scale-110 transition-transform">
@@ -61,8 +61,7 @@ export function HeroSection() {
                 <p className="font-medium text-lg">Ver Video VSL</p>
               </div>
             </div>
-            {/* <iframe ... /> goes here */}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
